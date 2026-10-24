@@ -45,7 +45,7 @@ class MainActivity : Activity() {
 
         urlInput = EditText(this).apply {
             hint = "https://example.com"
-            singleLine = true
+            maxLines = 1
             inputType = android.text.InputType.TYPE_CLASS_TEXT or
                 android.text.InputType.TYPE_TEXT_VARIATION_URI
         }
@@ -90,7 +90,7 @@ class MainActivity : Activity() {
 
         resultView = TextView(this).apply {
             textSize = 14f
-            textIsSelectable = true
+            setTextIsSelectable(true)
             setPadding(0, 20, 0, 0)
         }
         root.addView(resultView)
