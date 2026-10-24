@@ -1,0 +1,6 @@
+WebHack Toolkit source package
+- Source project ZIP; no prebuilt APK included.
+- Open the project in Android Studio with JDK 17 and Android SDK 35.
+- Build via Build > Build Bundle(s) / APK(s) > Build APK(s).
+- Not built or device-tested in this environment.
+- Scanner is limited and intended for authorized defensive checks only.
