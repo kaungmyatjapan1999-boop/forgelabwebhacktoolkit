@@ -1,11 +1,17 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.forgelab.webhacktoolkit">
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
-        android:allowBackup="false"
+        android:allowBackup="true"
+        android:icon="@android:drawable/ic_menu_manage"
         android:label="WebHack Toolkit"
-        android:theme="@android:style/Theme.Material.Light.NoActionBar"
-        android:usesCleartextTraffic="false"
-        android:supportsRtl="true">
+        android:roundIcon="@android:drawable/ic_menu_manage"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.DeviceDefault.NoActionBar">
+        
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -15,4 +21,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>
